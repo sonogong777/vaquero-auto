@@ -1,0 +1,42 @@
+2017/10/11:13:31:57 Starting preinstall script to cos3260-03
+2017/10/11:13:31:57 ./preinst_setup_UCSC-C3KIOE_2x10.sh -c 67.178.30.39 -u admin -p 'Comcast!23' -s 67.178.30.35 -b 67.178.30.36 
+
+[0;36mLogging into 67.178.30.39:[0m
+
+[0;33m  NOTE: Continuing may cause all data on this system to be removed.[0m
+
+
+[0;36mRemoving boot drive status from sys/chassis-1/server-2/board/storage-SAS-SBMezz1[0m
+
+[0;36mRemoving boot drive status from sys/chassis-1/server-2/board/storage-SAS-IOEMezz1[0m
+
+[0;36mUnassigning all drives:[0m
+
+[0;36mAssigning drives 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28 to sys/chassis-1/server-2/SBMezz1:[0m
+
+[0;36mAssigning drives 29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56 to sys/chassis-1/server-2/IOEMezz1:[0m
+
+[0;33m  NOTE: The following reset command may take a couple minutes to complete.[0m
+
+[0;36mResetting to defaults sys/chassis-1/server-2/adaptor-SIOC2:[0m
+
+[0;36mSetting sys/chassis-1/server-2/mgmt/if-1 network:[0m
+
+[0;36mSetting sys/chassis-1/slot-2/mgmt/if-1 network:[0m
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0':[0m
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1':[0m
+
+[0;36mSetting boot device order on 'sys/chassis-1/server-2':[0m
+
+[0;36mDisabling HyperThreading on sys/chassis-1/server-2:[0m
+
+[0;36mDisabling Power Management on sys/chassis-1/server-2:[0m
+
+[0;36mDisabling Virtualization Technology on sys/chassis-1/server-2:[0m
+
+[0;36mResetting to apply changes to sys/chassis-1/server-2/adaptor-SIOC2:[0m
+
+[0;36mLogging out of 67.178.30.39:[0m
+2017/10/11:13:34:45 ./preinst_setup_UCSC-C3KIOE_2x10.sh  script completed successfully for cos3260-03

@@ -1,0 +1,630 @@
+
+[0;33m NOTE: The following reset command may take a couple minutes to complete.[0m
+
+[0;36mResetting to defaults sys/chassis-1/server-2/adaptor-SIOC2:[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507621196/a6959abf-2c5b-1b2c-8019-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374C6" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>
+
+[0;36mSetting sys/chassis-1/server-2/mgmt/if-1 network:[0m
+<configConfMo dn="sys/chassis-1/server-2/mgmt/if-1" cookie="1507621196/a6959abf-2c5b-1b2c-8019-3a3d007a0140" response="yes">
+<outConfig>
+<mgmtIf dn="sys/chassis-1/server-2/mgmt/if-1" description="CIMC Interface Network Settings" id="1" v4IPAddr="1.1.1.1" mac="18:80:90:C2:C1:70" hostname="C3X60M4-FCH212275FH" v6extEnabled="no" v6IPAddr="::" v6prefix="64" v6extGw="::" v6linkLocal="::" v6SlaacIp="::" subject="blade" status="modified" ></mgmtIf></outConfig>
+</configConfMo>
+
+[0;36mSetting sys/chassis-1/slot-2/mgmt/if-1 network:[0m
+<configConfMo dn="sys/chassis-1/slot-2/mgmt/if-1" cookie="1507621196/a6959abf-2c5b-1b2c-8019-3a3d007a0140" response="yes">
+<outConfig>
+<mgmtIf dn="sys/chassis-1/slot-2/mgmt/if-1" description="Chassis Management Interface Network Settings" id="1" v4IPAddr="" mac="40:01:7A:00:3D:3A" hostname="UCS-S3260-FCH212374C6-2" v6extEnabled="no" v6IPAddr="::" v6prefix="64" v6extGw="::" v6linkLocal="::" v6SlaacIp="::" subject="sioc" status="modified" ></mgmtIf></outConfig>
+</configConfMo>
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0':[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0" cookie="1507621196/a6959abf-2c5b-1b2c-8019-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorHostEthIf name="eth0" cdn="VIC-2-eth0" ifType="virtual" mac="40:01:7A:00:3D:49" mtu="8192" pxeBoot="disabled" iscsiBoot="disabled" usnicCount="0" uplinkPort="0" classOfService="0" channelNumber="N/A" portProfile="N/A" advancedFilter="disabled" dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0" status="modified" ></adaptorHostEthIf></outConfig>
+</configConfMo>
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1':[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1" cookie="1507621196/a6959abf-2c5b-1b2c-8019-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorHostEthIf name="eth1" cdn="VIC-2-eth1" ifType="virtual" mac="40:01:7A:00:3D:4A" mtu="8192" pxeBoot="disabled" iscsiBoot="disabled" usnicCount="0" uplinkPort="1" classOfService="0" channelNumber="N/A" portProfile="N/A" advancedFilter="disabled" dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1" status="modified" ></adaptorHostEthIf></outConfig>
+</configConfMo>
+
+[0;36mSetting boot device order on 'sys/chassis-1/server-2':[0m
+<configConfMo dn="sys/chassis-1/server-2/boot-precision" cookie="1507621196/a6959abf-2c5b-1b2c-8019-3a3d007a0140" response="yes">
+<outConfig>
+<lsbootDevPrecision dn="sys/chassis-1/server-2/boot-precision" name="boot-precision" purpose="operational" rebootOnUpdate="no" reapply="no" configuredBootMode="None" lastConfiguredBootOrderSource="CIMC" status="modified" ></lsbootDevPrecision></outConfig>
+</configConfMo>
+
+[0;36mDisabling HyperThreading on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/Intel-HyperThreading-Tech" cookie="1507621196/a6959abf-2c5b-1b2c-8019-3a3d007a0140" response="yes">
+<outConfig>
+<biosVfIntelHyperThreadingTech dn="sys/chassis-1/server-2/bios/bios-settings/Intel-HyperThreading-Tech" vpIntelHyperThreadingTech="disabled" status="modified" ></biosVfIntelHyperThreadingTech></outConfig>
+</configConfMo>
+
+[0;36mDisabling Power Management on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/CPU-PowerManagement" cookie="1507621196/a6959abf-2c5b-1b2c-8019-3a3d007a0140" response="yes">
+<outConfig>
+<biosVfCPUPowerManagement dn="sys/chassis-1/server-2/bios/bios-settings/CPU-PowerManagement" vpCPUPowerManagement="disabled" status="modified" ></biosVfCPUPowerManagement></outConfig>
+</configConfMo>
+
+[0;36mDisabling Virtualization Technology on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/Intel-Virtualization-Technology" cookie="1507621196/a6959abf-2c5b-1b2c-8019-3a3d007a0140" response="yes">
+<outConfig>
+<biosVfIntelVirtualizationTechnology dn="sys/chassis-1/server-2/bios/bios-settings/Intel-Virtualization-Technology" vpIntelVirtualizationTechnology="disabled" status="modified" ></biosVfIntelVirtualizationTechnology></outConfig>
+</configConfMo>
+
+[0;36mResetting to apply changes to sys/chassis-1/server-2/adaptor-SIOC2:[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507621196/a6959abf-2c5b-1b2c-8019-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374C6" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>
+
+[0;33m NOTE: The following reset command may take a couple minutes to complete.[0m
+
+[0;36mResetting to defaults sys/chassis-1/server-2/adaptor-SIOC2:[0m
+
+[0;33m NOTE: The following reset command may take a couple minutes to complete.[0m
+
+[0;36mResetting to defaults sys/chassis-1/server-2/adaptor-SIOC2:[0m
+
+[0;33m NOTE: The following reset command may take a couple minutes to complete.[0m
+
+[0;36mResetting to defaults sys/chassis-1/server-2/adaptor-SIOC2:[0m
+
+[0;33m NOTE: The following reset command may take a couple minutes to complete.[0m
+
+[0;36mResetting to defaults sys/chassis-1/server-2/adaptor-SIOC2:[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507621506/1673d09b-2c5b-1b2c-801a-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374C6" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507621506/0589c929-2d5b-1b2d-801b-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374C6" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507621506/6f289b95-2c5b-1b2c-801c-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374C6" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507621506/e2175420-2d5b-1b2d-801d-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374C6" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>
+
+[0;36mSetting sys/chassis-1/server-2/mgmt/if-1 network:[0m
+
+[0;36mSetting sys/chassis-1/server-2/mgmt/if-1 network:[0m
+<configConfMo dn="sys/chassis-1/server-2/mgmt/if-1" cookie="1507621506/0589c929-2d5b-1b2d-801b-3a3d007a0140" response="yes">
+<outConfig>
+<mgmtIf dn="sys/chassis-1/server-2/mgmt/if-1" description="CIMC Interface Network Settings" id="1" v4IPAddr="67.178.30.36" mac="18:80:90:C2:C1:70" hostname="C3X60M4-FCH212275FH" v6extEnabled="no" v6IPAddr="::" v6prefix="64" v6extGw="::" v6linkLocal="::" v6SlaacIp="::" subject="blade" status="modified" ></mgmtIf></outConfig>
+</configConfMo>
+
+[0;36mSetting sys/chassis-1/slot-2/mgmt/if-1 network:[0m
+<configConfMo dn="sys/chassis-1/slot-2/mgmt/if-1" cookie="1507621506/0589c929-2d5b-1b2d-801b-3a3d007a0140" response="yes">
+<outConfig>
+<mgmtIf dn="sys/chassis-1/slot-2/mgmt/if-1" description="Chassis Management Interface Network Settings" id="1" v4IPAddr="" mac="40:01:7A:00:3D:3A" hostname="UCS-S3260-FCH212374C6-2" v6extEnabled="no" v6IPAddr="::" v6prefix="64" v6extGw="::" v6linkLocal="::" v6SlaacIp="::" subject="sioc" status="modified" ></mgmtIf></outConfig>
+</configConfMo>
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0':[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0" cookie="1507621506/0589c929-2d5b-1b2d-801b-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorHostEthIf name="eth0" cdn="VIC-2-eth0" ifType="virtual" mac="40:01:7A:00:3D:49" mtu="8192" pxeBoot="disabled" iscsiBoot="disabled" usnicCount="0" uplinkPort="0" classOfService="0" channelNumber="N/A" portProfile="N/A" advancedFilter="disabled" dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0" status="modified" ></adaptorHostEthIf></outConfig>
+</configConfMo>
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1':[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1" cookie="1507621506/0589c929-2d5b-1b2d-801b-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorHostEthIf name="eth1" cdn="VIC-2-eth1" ifType="virtual" mac="40:01:7A:00:3D:4A" mtu="8192" pxeBoot="disabled" iscsiBoot="disabled" usnicCount="0" uplinkPort="1" classOfService="0" channelNumber="N/A" portProfile="N/A" advancedFilter="disabled" dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1" status="modified" ></adaptorHostEthIf></outConfig>
+</configConfMo>
+
+[0;36mSetting boot device order on 'sys/chassis-1/server-2':[0m
+
+[0;36mSetting sys/chassis-1/server-2/mgmt/if-1 network:[0m
+
+[0;36mSetting sys/chassis-1/server-2/mgmt/if-1 network:[0m
+<configConfMo dn="sys/chassis-1/server-2/boot-precision" cookie="1507621506/0589c929-2d5b-1b2d-801b-3a3d007a0140" response="yes">
+<outConfig>
+<lsbootDevPrecision dn="sys/chassis-1/server-2/boot-precision" name="boot-precision" purpose="operational" rebootOnUpdate="no" reapply="no" configuredBootMode="None" lastConfiguredBootOrderSource="CIMC" status="modified" ></lsbootDevPrecision></outConfig>
+</configConfMo>
+
+[0;36mDisabling HyperThreading on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/Intel-HyperThreading-Tech" cookie="1507621506/0589c929-2d5b-1b2d-801b-3a3d007a0140" response="yes">
+<outConfig>
+<biosVfIntelHyperThreadingTech dn="sys/chassis-1/server-2/bios/bios-settings/Intel-HyperThreading-Tech" vpIntelHyperThreadingTech="disabled" status="modified" ></biosVfIntelHyperThreadingTech></outConfig>
+</configConfMo>
+
+[0;36mDisabling Power Management on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/mgmt/if-1" cookie="1507621506/1673d09b-2c5b-1b2c-801a-3a3d007a0140" response="yes">
+<outConfig>
+<mgmtIf dn="sys/chassis-1/server-2/mgmt/if-1" description="CIMC Interface Network Settings" id="1" v4IPAddr="67.178.30.36" mac="18:80:90:C2:C1:70" hostname="C3X60M4-FCH212275FH" v6extEnabled="no" v6IPAddr="::" v6prefix="64" v6extGw="::" v6linkLocal="::" v6SlaacIp="::" subject="blade" status="modified" ></mgmtIf></outConfig>
+</configConfMo>
+
+[0;36mSetting sys/chassis-1/slot-2/mgmt/if-1 network:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/CPU-PowerManagement" cookie="1507621506/0589c929-2d5b-1b2d-801b-3a3d007a0140" response="yes">
+<outConfig>
+<biosVfCPUPowerManagement dn="sys/chassis-1/server-2/bios/bios-settings/CPU-PowerManagement" vpCPUPowerManagement="disabled" status="modified" ></biosVfCPUPowerManagement></outConfig>
+</configConfMo>
+
+[0;36mDisabling Virtualization Technology on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/slot-2/mgmt/if-1" cookie="1507621506/1673d09b-2c5b-1b2c-801a-3a3d007a0140" response="yes">
+<outConfig>
+<mgmtIf dn="sys/chassis-1/slot-2/mgmt/if-1" description="Chassis Management Interface Network Settings" id="1" v4IPAddr="67.178.30.35" mac="40:01:7A:00:3D:3A" hostname="UCS-S3260-FCH212374C6-2" v6extEnabled="no" v6IPAddr="::" v6prefix="64" v6extGw="::" v6linkLocal="::" v6SlaacIp="::" subject="sioc" status="modified" ></mgmtIf></outConfig>
+</configConfMo>
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0':[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0" cookie="1507621506/1673d09b-2c5b-1b2c-801a-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorHostEthIf name="eth0" cdn="VIC-2-eth0" ifType="virtual" mac="40:01:7A:00:3D:49" mtu="8192" pxeBoot="disabled" iscsiBoot="disabled" usnicCount="0" uplinkPort="0" classOfService="0" channelNumber="N/A" portProfile="N/A" advancedFilter="disabled" dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0" status="modified" ></adaptorHostEthIf></outConfig>
+</configConfMo>
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1':[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1" cookie="1507621506/1673d09b-2c5b-1b2c-801a-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorHostEthIf name="eth1" cdn="VIC-2-eth1" ifType="virtual" mac="40:01:7A:00:3D:4A" mtu="8192" pxeBoot="disabled" iscsiBoot="disabled" usnicCount="0" uplinkPort="1" classOfService="0" channelNumber="N/A" portProfile="N/A" advancedFilter="disabled" dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1" status="modified" ></adaptorHostEthIf></outConfig>
+</configConfMo>
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/Intel-Virtualization-Technology" cookie="1507621506/0589c929-2d5b-1b2d-801b-3a3d007a0140" response="yes">
+<outConfig>
+<biosVfIntelVirtualizationTechnology dn="sys/chassis-1/server-2/bios/bios-settings/Intel-Virtualization-Technology" vpIntelVirtualizationTechnology="disabled" status="modified" ></biosVfIntelVirtualizationTechnology></outConfig>
+</configConfMo>
+
+[0;36mResetting to apply changes to sys/chassis-1/server-2/adaptor-SIOC2:[0m
+
+[0;36mSetting boot device order on 'sys/chassis-1/server-2':[0m
+<configConfMo dn="sys/chassis-1/server-2/boot-precision" cookie="1507621506/1673d09b-2c5b-1b2c-801a-3a3d007a0140" response="yes">
+<outConfig>
+<lsbootDevPrecision dn="sys/chassis-1/server-2/boot-precision" name="boot-precision" purpose="operational" rebootOnUpdate="no" reapply="no" configuredBootMode="None" lastConfiguredBootOrderSource="CIMC" status="modified" ></lsbootDevPrecision></outConfig>
+</configConfMo>
+
+[0;36mDisabling HyperThreading on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/Intel-HyperThreading-Tech" cookie="1507621506/1673d09b-2c5b-1b2c-801a-3a3d007a0140" response="yes">
+<outConfig>
+<biosVfIntelHyperThreadingTech dn="sys/chassis-1/server-2/bios/bios-settings/Intel-HyperThreading-Tech" vpIntelHyperThreadingTech="disabled" status="modified" ></biosVfIntelHyperThreadingTech></outConfig>
+</configConfMo>
+
+[0;36mDisabling Power Management on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/CPU-PowerManagement" cookie="1507621506/1673d09b-2c5b-1b2c-801a-3a3d007a0140" response="yes">
+<outConfig>
+<biosVfCPUPowerManagement dn="sys/chassis-1/server-2/bios/bios-settings/CPU-PowerManagement" vpCPUPowerManagement="disabled" status="modified" ></biosVfCPUPowerManagement></outConfig>
+</configConfMo>
+
+[0;36mDisabling Virtualization Technology on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/mgmt/if-1" cookie="1507621506/6f289b95-2c5b-1b2c-801c-3a3d007a0140" response="yes">
+<outConfig>
+<mgmtIf dn="sys/chassis-1/server-2/mgmt/if-1" description="CIMC Interface Network Settings" id="1" v4IPAddr="67.178.30.36" mac="18:80:90:C2:C1:70" hostname="C3X60M4-FCH212275FH" v6extEnabled="no" v6IPAddr="::" v6prefix="64" v6extGw="::" v6linkLocal="::" v6SlaacIp="::" subject="blade" status="modified" ></mgmtIf></outConfig>
+</configConfMo>
+
+[0;36mSetting sys/chassis-1/slot-2/mgmt/if-1 network:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/Intel-Virtualization-Technology" cookie="1507621506/1673d09b-2c5b-1b2c-801a-3a3d007a0140" response="yes">
+<outConfig>
+<biosVfIntelVirtualizationTechnology dn="sys/chassis-1/server-2/bios/bios-settings/Intel-Virtualization-Technology" vpIntelVirtualizationTechnology="disabled" status="modified" ></biosVfIntelVirtualizationTechnology></outConfig>
+</configConfMo>
+
+[0;36mResetting to apply changes to sys/chassis-1/server-2/adaptor-SIOC2:[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507621506/1673d09b-2c5b-1b2c-801a-3a3d007a0140" response="yes" errorCode="2003" invocationResult="unidentified-fail" errorDescr="Operation failed. : Adapter SIOC2 is not powered on.Check Host power state and try again."></configConfMo>
+
+[0;36mExiting ...[0m
+<aaaLogout cookie="" response="yes" outStatus="success"> </aaaLogout>
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507621506/0589c929-2d5b-1b2d-801b-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374C6" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>
+
+[0;36mSetting sys/chassis-1/slot-2/mgmt/if-1 network:[0m
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0':[0m
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0':[0m
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1':[0m
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1':[0m
+
+[0;36mSetting PCH boot device order on 'sys/chassis-1/server-2':[0m
+
+[0;36mSetting PCH boot device order on 'sys/chassis-1/server-2':[0m
+
+[0;36mDisabling HyperThreading on sys/chassis-1/server-2:[0m
+
+[0;36mDisabling HyperThreading on sys/chassis-1/server-2:[0m
+
+[0;36mDisabling Power Management on sys/chassis-1/server-2:[0m
+
+[0;36mDisabling Power Management on sys/chassis-1/server-2:[0m
+
+[0;36mDisabling Virtualization Technology on sys/chassis-1/server-2:[0m
+
+[0;36mDisabling Virtualization Technology on sys/chassis-1/server-2:[0m
+
+[0;36mResetting to apply changes to sys/chassis-1/server-2/adaptor-SIOC2:[0m
+
+[0;36mResetting to apply changes to sys/chassis-1/server-2/adaptor-SIOC2:[0m
+
+[0;33m NOTE: The following reset command may take a couple minutes to complete.[0m
+
+[0;36mResetting to defaults sys/chassis-1/server-2/adaptor-SIOC2:[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507675258/1a3d7877-395b-1b39-801f-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374C6" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>
+
+[0;36mSetting sys/chassis-1/server-2/mgmt/if-1 network:[0m
+<configConfMo dn="sys/chassis-1/server-2/mgmt/if-1" cookie="1507675258/1a3d7877-395b-1b39-801f-3a3d007a0140" response="yes">
+<outConfig>
+<mgmtIf dn="sys/chassis-1/server-2/mgmt/if-1" description="CIMC Interface Network Settings" id="1" v4IPAddr="67.178.30.36" mac="18:80:90:C2:C1:70" hostname="C3X60M4-FCH212275FH" v6extEnabled="no" v6IPAddr="::" v6prefix="64" v6extGw="::" v6linkLocal="::" v6SlaacIp="::" subject="blade" status="modified" ></mgmtIf></outConfig>
+</configConfMo>
+
+[0;36mSetting sys/chassis-1/slot-2/mgmt/if-1 network:[0m
+<configConfMo dn="sys/chassis-1/slot-2/mgmt/if-1" cookie="1507675258/1a3d7877-395b-1b39-801f-3a3d007a0140" response="yes">
+<outConfig>
+<mgmtIf dn="sys/chassis-1/slot-2/mgmt/if-1" description="Chassis Management Interface Network Settings" id="1" v4IPAddr="" mac="40:01:7A:00:3D:3A" hostname="UCS-S3260-FCH212374C6-2" v6extEnabled="no" v6IPAddr="::" v6prefix="64" v6extGw="::" v6linkLocal="::" v6SlaacIp="::" subject="sioc" status="modified" ></mgmtIf></outConfig>
+</configConfMo>
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0':[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0" cookie="1507675258/1a3d7877-395b-1b39-801f-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorHostEthIf name="eth0" cdn="VIC-2-eth0" ifType="virtual" mac="40:01:7A:00:3D:49" mtu="8192" pxeBoot="disabled" iscsiBoot="disabled" usnicCount="0" uplinkPort="0" classOfService="0" channelNumber="N/A" portProfile="N/A" advancedFilter="disabled" dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0" status="modified" ></adaptorHostEthIf></outConfig>
+</configConfMo>
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1':[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1" cookie="1507675258/1a3d7877-395b-1b39-801f-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorHostEthIf name="eth1" cdn="VIC-2-eth1" ifType="virtual" mac="40:01:7A:00:3D:4A" mtu="8192" pxeBoot="disabled" iscsiBoot="disabled" usnicCount="0" uplinkPort="1" classOfService="0" channelNumber="N/A" portProfile="N/A" advancedFilter="disabled" dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1" status="modified" ></adaptorHostEthIf></outConfig>
+</configConfMo>
+
+[0;36mSetting boot device order on 'sys/chassis-1/server-2':[0m
+<configConfMo dn="sys/chassis-1/server-2/boot-precision" cookie="1507675258/1a3d7877-395b-1b39-801f-3a3d007a0140" response="yes">
+<outConfig>
+<lsbootDevPrecision dn="sys/chassis-1/server-2/boot-precision" name="boot-precision" purpose="operational" rebootOnUpdate="no" reapply="no" configuredBootMode="None" lastConfiguredBootOrderSource="CIMC" status="modified" ></lsbootDevPrecision></outConfig>
+</configConfMo>
+
+[0;36mDisabling HyperThreading on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/Intel-HyperThreading-Tech" cookie="1507675258/1a3d7877-395b-1b39-801f-3a3d007a0140" response="yes">
+<outConfig>
+<biosVfIntelHyperThreadingTech dn="sys/chassis-1/server-2/bios/bios-settings/Intel-HyperThreading-Tech" vpIntelHyperThreadingTech="disabled" status="modified" ></biosVfIntelHyperThreadingTech></outConfig>
+</configConfMo>
+
+[0;36mDisabling Power Management on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/CPU-PowerManagement" cookie="1507675258/1a3d7877-395b-1b39-801f-3a3d007a0140" response="yes">
+<outConfig>
+<biosVfCPUPowerManagement dn="sys/chassis-1/server-2/bios/bios-settings/CPU-PowerManagement" vpCPUPowerManagement="disabled" status="modified" ></biosVfCPUPowerManagement></outConfig>
+</configConfMo>
+
+[0;36mDisabling Virtualization Technology on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/Intel-Virtualization-Technology" cookie="1507675258/1a3d7877-395b-1b39-801f-3a3d007a0140" response="yes">
+<outConfig>
+<biosVfIntelVirtualizationTechnology dn="sys/chassis-1/server-2/bios/bios-settings/Intel-Virtualization-Technology" vpIntelVirtualizationTechnology="disabled" status="modified" ></biosVfIntelVirtualizationTechnology></outConfig>
+</configConfMo>
+
+[0;36mResetting to apply changes to sys/chassis-1/server-2/adaptor-SIOC2:[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507675258/1a3d7877-395b-1b39-801f-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374C6" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>
+
+[0;33m NOTE: The following reset command may take a couple minutes to complete.[0m
+
+[0;36mResetting to defaults sys/chassis-1/server-2/adaptor-SIOC2:[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507708593/ab9d5e2a-415b-1b41-8020-3a3d007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374C6" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>
+
+[0;36mSetting sys/chassis-1/server-2/mgmt/if-1 network:[0m
+<configConfMo dn="sys/chassis-1/server-2/mgmt/if-1" cookie="1507708593/ab9d5e2a-415b-1b41-8020-3a3d007a0140" response="yes">
+<outConfig>
+<mgmtIf dn="sys/chassis-1/server-2/mgmt/if-1" description="CIMC Interface Network Settings" id="1" v4IPAddr="67.178.30.36" mac="18:80:90:C2:C1:70" hostname="C3X60M4-FCH212275FH" v6extEnabled="no" v6IPAddr="::" v6prefix="64" v6extGw="::" v6linkLocal="::" v6SlaacIp="::" subject="blade" status="modified" ></mgmtIf></outConfig>
+</configConfMo>
+
+[0;36mSetting sys/chassis-1/slot-2/mgmt/if-1 network:[0m
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0':[0m
+
+[0;33m NOTE: The following reset command may take a couple minutes to complete.[0m
+
+[0;36mResetting to defaults sys/chassis-1/server-2/adaptor-SIOC2:[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507711415/daaf50d9-415b-1b41-8002-c33f007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374CN" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>
+
+[0;36mSetting sys/chassis-1/server-2/mgmt/if-1 network:[0m
+<configConfMo dn="sys/chassis-1/server-2/mgmt/if-1" cookie="1507711415/daaf50d9-415b-1b41-8002-c33f007a0140" response="yes">
+<outConfig>
+<mgmtIf dn="sys/chassis-1/server-2/mgmt/if-1" description="CIMC Interface Network Settings" id="1" v4IPAddr="67.178.30.36" mac="70:DF:2F:33:2D:76" hostname="C3X60M4-FCH211871YM" v6extEnabled="no" v6IPAddr="::" v6prefix="64" v6extGw="::" v6linkLocal="::" v6SlaacIp="::" subject="blade" status="modified" ></mgmtIf></outConfig>
+</configConfMo>
+
+[0;36mSetting sys/chassis-1/slot-2/mgmt/if-1 network:[0m
+<configConfMo dn="sys/chassis-1/slot-2/mgmt/if-1" cookie="1507711415/daaf50d9-415b-1b41-8002-c33f007a0140" response="yes">
+<outConfig>
+<mgmtIf dn="sys/chassis-1/slot-2/mgmt/if-1" description="Chassis Management Interface Network Settings" id="1" v4IPAddr="" mac="40:01:7A:00:3F:C3" hostname="UCS-S3260-FCH212374CN-2" v6extEnabled="no" v6IPAddr="::" v6prefix="64" v6extGw="::" v6linkLocal="::" v6SlaacIp="::" subject="sioc" status="modified" ></mgmtIf></outConfig>
+</configConfMo>
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0':[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0" cookie="1507711415/daaf50d9-415b-1b41-8002-c33f007a0140" response="yes">
+<outConfig>
+<adaptorHostEthIf name="eth0" cdn="VIC-2-eth0" ifType="virtual" mac="40:01:7A:00:3F:D2" mtu="8192" pxeBoot="disabled" iscsiBoot="disabled" usnicCount="0" uplinkPort="0" classOfService="0" channelNumber="N/A" portProfile="N/A" advancedFilter="disabled" dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0" status="modified" ></adaptorHostEthIf></outConfig>
+</configConfMo>
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1':[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1" cookie="1507711415/daaf50d9-415b-1b41-8002-c33f007a0140" response="yes">
+<outConfig>
+<adaptorHostEthIf name="eth1" cdn="VIC-2-eth1" ifType="virtual" mac="40:01:7A:00:3F:D3" mtu="8192" pxeBoot="disabled" iscsiBoot="disabled" usnicCount="0" uplinkPort="1" classOfService="0" channelNumber="N/A" portProfile="N/A" advancedFilter="disabled" dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1" status="modified" ></adaptorHostEthIf></outConfig>
+</configConfMo>
+
+[0;36mSetting boot device order on 'sys/chassis-1/server-2':[0m
+<configConfMo dn="sys/chassis-1/server-2/boot-precision" cookie="1507711415/daaf50d9-415b-1b41-8002-c33f007a0140" response="yes">
+<outConfig>
+<lsbootDevPrecision dn="sys/chassis-1/server-2/boot-precision" name="boot-precision" purpose="operational" rebootOnUpdate="no" reapply="no" configuredBootMode="None" lastConfiguredBootOrderSource="CIMC" status="modified" ></lsbootDevPrecision></outConfig>
+</configConfMo>
+
+[0;36mDisabling HyperThreading on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/Intel-HyperThreading-Tech" cookie="1507711415/daaf50d9-415b-1b41-8002-c33f007a0140" response="yes">
+<outConfig>
+<biosVfIntelHyperThreadingTech dn="sys/chassis-1/server-2/bios/bios-settings/Intel-HyperThreading-Tech" vpIntelHyperThreadingTech="disabled" status="modified" ></biosVfIntelHyperThreadingTech></outConfig>
+</configConfMo>
+
+[0;36mDisabling Power Management on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/CPU-PowerManagement" cookie="1507711415/daaf50d9-415b-1b41-8002-c33f007a0140" response="yes">
+<outConfig>
+<biosVfCPUPowerManagement dn="sys/chassis-1/server-2/bios/bios-settings/CPU-PowerManagement" vpCPUPowerManagement="disabled" status="modified" ></biosVfCPUPowerManagement></outConfig>
+</configConfMo>
+
+[0;36mDisabling Virtualization Technology on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/Intel-Virtualization-Technology" cookie="1507711415/daaf50d9-415b-1b41-8002-c33f007a0140" response="yes">
+<outConfig>
+<biosVfIntelVirtualizationTechnology dn="sys/chassis-1/server-2/bios/bios-settings/Intel-Virtualization-Technology" vpIntelVirtualizationTechnology="disabled" status="modified" ></biosVfIntelVirtualizationTechnology></outConfig>
+</configConfMo>
+
+[0;36mResetting to apply changes to sys/chassis-1/server-2/adaptor-SIOC2:[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507711415/daaf50d9-415b-1b41-8002-c33f007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374CN" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>
+
+[0;33m NOTE: The following reset command may take a couple minutes to complete.[0m
+
+[0;36mResetting to defaults sys/chassis-1/server-2/adaptor-SIOC2:[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507717560/7f54f324-435b-1b43-8003-c33f007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374CN" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>
+
+[0;33m NOTE: The following reset command may take a couple minutes to complete.[0m
+
+[0;36mResetting to defaults sys/chassis-1/server-2/adaptor-SIOC2:[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507717622/68785111-435b-1b43-8004-c33f007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374CN" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>
+
+[0;33m NOTE: Continuing may cause all data on this system to be removed.[0m
+
+[0;36mExiting ...[0m
+<aaaLogout cookie="" response="yes" outStatus="success"> </aaaLogout>
+
+[0;33m NOTE: Continuing may cause all data on this system to be removed.[0m
+
+[0;33m NOTE: Continuing may cause all data on this system to be removed.[0m
+
+[0;36mRemoving boot drive status from sys/chassis-1/server-2/board/storage-SAS-SBMezz1[0m
+
+[0;33m NOTE: Continuing may cause all data on this system to be removed.[0m
+
+[0;36mExiting ...[0m
+<aaaLogout cookie="" response="yes" outStatus="success"> </aaaLogout>
+
+[0;33m NOTE: Continuing may cause all data on this system to be removed.[0m
+
+[0;36mRemoving boot drive status from sys/chassis-1/server-2/board/storage-SAS-SBMezz1[0m
+<configConfMo dn="sys/chassis-1/server-2/board/storage-SAS-SBMezz1" cookie="1507718333/912f7f2b-435b-1b43-8009-c33f007a0140" response="yes">
+<outConfig>
+<storageController id="SBMezz1" model="Cisco UCS C3000 RAID Controller for M4 Server Blade with 4G RAID Cache" pciSlot="SBMezz1" presence="equipped" raidSupport="yes" serial="FCH212274N8" type="SAS" vendor="LSI Logic" selfEncryptEnabled="no" adminAction="no-op" dn="sys/chassis-1/server-2/board/storage-SAS-SBMezz1" status="modified" ></storageController></outConfig>
+</configConfMo>
+
+[0;36mRemoving boot drive status from sys/chassis-1/server-2/board/storage-SAS-IOEMezz1[0m
+<configConfMo dn="sys/chassis-1/server-2/board/storage-SAS-IOEMezz1" cookie="1507718333/912f7f2b-435b-1b43-8009-c33f007a0140" response="yes">
+<outConfig>
+<storageController id="IOEMezz1" model="Cisco UCS C3000 RAID Controller for M4 Server Blade with 4G RAID Cache" pciSlot="IOEMezz1" presence="equipped" raidSupport="yes" serial="FCH211075KJ" type="SAS" vendor="LSI Logic" selfEncryptEnabled="no" adminAction="no-op" dn="sys/chassis-1/server-2/board/storage-SAS-IOEMezz1" status="modified" ></storageController></outConfig>
+</configConfMo>
+
+[0;36mDeleting virtual drive: sys/chassis-1/server-2/board/storage-SAS-SBMezz1/vd-0[0m
+<configConfMo dn="sys/chassis-1/server-2/board/storage-SAS-SBMezz1/vd-0" cookie="1507718333/912f7f2b-435b-1b43-8009-c33f007a0140" response="yes">
+<outConfig>
+</outConfig>
+</configConfMo>
+
+[0;36mUnassigning all drives:[0m
+<configConfMo dn="sys/chassis-1/enc-1/zone-drive" cookie="1507718333/912f7f2b-435b-1b43-8009-c33f007a0140" response="yes">
+<outConfig>
+<storageEnclosureDiskSlotZoneHelper dn="sys/chassis-1/enc-1/zone-drive" slotList="" operStatus="" ownership="" ownershipController="" adminState="triggered" status="modified" ></storageEnclosureDiskSlotZoneHelper></outConfig>
+</configConfMo>
+
+[0;36mAssigning drives 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28 to sys/chassis-1/server-2/SBMezz1:[0m
+<configConfMo dn="sys/chassis-1/enc-1/zone-drive" cookie="1507718333/912f7f2b-435b-1b43-8009-c33f007a0140" response="yes">
+<outConfig>
+<storageEnclosureDiskSlotZoneHelper dn="sys/chassis-1/enc-1/zone-drive" slotList="" operStatus="" ownership="" ownershipController="" adminState="triggered" status="modified" ></storageEnclosureDiskSlotZoneHelper></outConfig>
+</configConfMo>
+
+[0;36mAssigning drives 29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56 to sys/chassis-1/server-2/IOEMezz1:[0m
+<configConfMo dn="sys/chassis-1/enc-1/zone-drive" cookie="1507718333/912f7f2b-435b-1b43-8009-c33f007a0140" response="yes">
+<outConfig>
+<storageEnclosureDiskSlotZoneHelper dn="sys/chassis-1/enc-1/zone-drive" slotList="" operStatus="" ownership="" ownershipController="" adminState="triggered" status="modified" ></storageEnclosureDiskSlotZoneHelper></outConfig>
+</configConfMo>
+
+[0;33m NOTE: The following reset command may take a couple minutes to complete.[0m
+
+[0;36mResetting to defaults sys/chassis-1/server-2/adaptor-SIOC2:[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507718333/912f7f2b-435b-1b43-8009-c33f007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374CN" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>
+
+[0;36mSetting sys/chassis-1/server-2/mgmt/if-1 network:[0m
+<configConfMo dn="sys/chassis-1/server-2/mgmt/if-1" cookie="1507718333/912f7f2b-435b-1b43-8009-c33f007a0140" response="yes">
+<outConfig>
+<mgmtIf dn="sys/chassis-1/server-2/mgmt/if-1" description="CIMC Interface Network Settings" id="1" v4IPAddr="67.178.30.36" mac="70:DF:2F:33:2D:76" hostname="C3X60M4-FCH211871YM" v6extEnabled="no" v6IPAddr="::" v6prefix="64" v6extGw="::" v6linkLocal="::" v6SlaacIp="::" subject="blade" status="modified" ></mgmtIf></outConfig>
+</configConfMo>
+
+[0;36mSetting sys/chassis-1/slot-2/mgmt/if-1 network:[0m
+<configConfMo dn="sys/chassis-1/slot-2/mgmt/if-1" cookie="1507718333/912f7f2b-435b-1b43-8009-c33f007a0140" response="yes">
+<outConfig>
+<mgmtIf dn="sys/chassis-1/slot-2/mgmt/if-1" description="Chassis Management Interface Network Settings" id="1" v4IPAddr="" mac="40:01:7A:00:3F:C3" hostname="UCS-S3260-FCH212374CN-2" v6extEnabled="no" v6IPAddr="::" v6prefix="64" v6extGw="::" v6linkLocal="::" v6SlaacIp="::" subject="sioc" status="modified" ></mgmtIf></outConfig>
+</configConfMo>
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0':[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0" cookie="1507718333/912f7f2b-435b-1b43-8009-c33f007a0140" response="yes">
+<outConfig>
+<adaptorHostEthIf name="eth0" cdn="VIC-2-eth0" ifType="virtual" mac="40:01:7A:00:3F:D2" mtu="8192" pxeBoot="disabled" iscsiBoot="disabled" usnicCount="0" uplinkPort="0" classOfService="0" channelNumber="N/A" portProfile="N/A" advancedFilter="disabled" dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0" status="modified" ></adaptorHostEthIf></outConfig>
+</configConfMo>
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1':[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1" cookie="1507718333/912f7f2b-435b-1b43-8009-c33f007a0140" response="yes">
+<outConfig>
+<adaptorHostEthIf name="eth1" cdn="VIC-2-eth1" ifType="virtual" mac="40:01:7A:00:3F:D3" mtu="8192" pxeBoot="disabled" iscsiBoot="disabled" usnicCount="0" uplinkPort="1" classOfService="0" channelNumber="N/A" portProfile="N/A" advancedFilter="disabled" dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1" status="modified" ></adaptorHostEthIf></outConfig>
+</configConfMo>
+
+[0;36mSetting boot device order on 'sys/chassis-1/server-2':[0m
+<configConfMo dn="sys/chassis-1/server-2/boot-precision" cookie="1507718333/912f7f2b-435b-1b43-8009-c33f007a0140" response="yes">
+<outConfig>
+<lsbootDevPrecision dn="sys/chassis-1/server-2/boot-precision" name="boot-precision" purpose="operational" rebootOnUpdate="no" reapply="no" configuredBootMode="None" lastConfiguredBootOrderSource="CIMC" status="modified" ></lsbootDevPrecision></outConfig>
+</configConfMo>
+
+[0;36mDisabling HyperThreading on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/Intel-HyperThreading-Tech" cookie="1507718333/912f7f2b-435b-1b43-8009-c33f007a0140" response="yes">
+<outConfig>
+<biosVfIntelHyperThreadingTech dn="sys/chassis-1/server-2/bios/bios-settings/Intel-HyperThreading-Tech" vpIntelHyperThreadingTech="disabled" status="modified" ></biosVfIntelHyperThreadingTech></outConfig>
+</configConfMo>
+
+[0;36mDisabling Power Management on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/CPU-PowerManagement" cookie="1507718333/912f7f2b-435b-1b43-8009-c33f007a0140" response="yes">
+<outConfig>
+<biosVfCPUPowerManagement dn="sys/chassis-1/server-2/bios/bios-settings/CPU-PowerManagement" vpCPUPowerManagement="disabled" status="modified" ></biosVfCPUPowerManagement></outConfig>
+</configConfMo>
+
+[0;36mDisabling Virtualization Technology on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/Intel-Virtualization-Technology" cookie="1507718333/912f7f2b-435b-1b43-8009-c33f007a0140" response="yes">
+<outConfig>
+<biosVfIntelVirtualizationTechnology dn="sys/chassis-1/server-2/bios/bios-settings/Intel-Virtualization-Technology" vpIntelVirtualizationTechnology="disabled" status="modified" ></biosVfIntelVirtualizationTechnology></outConfig>
+</configConfMo>
+
+[0;36mResetting to apply changes to sys/chassis-1/server-2/adaptor-SIOC2:[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507718333/912f7f2b-435b-1b43-8009-c33f007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374CN" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>
+
+[0;33m NOTE: Continuing may cause all data on this system to be removed.[0m
+
+[0;36mRemoving boot drive status from sys/chassis-1/server-2/board/storage-SAS-SBMezz1[0m
+<configConfMo dn="sys/chassis-1/server-2/board/storage-SAS-SBMezz1" cookie="1507718912/b24ea329-445b-1b44-800a-c33f007a0140" response="yes">
+<outConfig>
+<storageController id="SBMezz1" model="Cisco UCS C3000 RAID Controller for M4 Server Blade with 4G RAID Cache" pciSlot="SBMezz1" presence="equipped" raidSupport="yes" serial="FCH212274N8" type="SAS" vendor="LSI Logic" selfEncryptEnabled="no" adminAction="no-op" dn="sys/chassis-1/server-2/board/storage-SAS-SBMezz1" status="modified" ></storageController></outConfig>
+</configConfMo>
+
+[0;36mRemoving boot drive status from sys/chassis-1/server-2/board/storage-SAS-IOEMezz1[0m
+<configConfMo dn="sys/chassis-1/server-2/board/storage-SAS-IOEMezz1" cookie="1507718912/b24ea329-445b-1b44-800a-c33f007a0140" response="yes">
+<outConfig>
+<storageController id="IOEMezz1" model="Cisco UCS C3000 RAID Controller for M4 Server Blade with 4G RAID Cache" pciSlot="IOEMezz1" presence="equipped" raidSupport="yes" serial="FCH211075KJ" type="SAS" vendor="LSI Logic" selfEncryptEnabled="no" adminAction="no-op" dn="sys/chassis-1/server-2/board/storage-SAS-IOEMezz1" status="modified" ></storageController></outConfig>
+</configConfMo>
+
+[0;36mDeleting virtual drive: sys/chassis-1/server-2/board/storage-SAS-SBMezz1/vd-0[0m
+<configConfMo dn="sys/chassis-1/server-2/board/storage-SAS-SBMezz1/vd-0" cookie="1507718912/b24ea329-445b-1b44-800a-c33f007a0140" response="yes">
+<outConfig>
+</outConfig>
+</configConfMo>
+
+[0;33m NOTE: Continuing may cause all data on this system to be removed.[0m
+
+[0;36mRemoving boot drive status from sys/chassis-1/server-2/board/storage-SAS-SBMezz1[0m
+<configConfMo dn="sys/chassis-1/server-2/board/storage-SAS-SBMezz1" cookie="1507719164/91a8d384-435b-1b43-800b-c33f007a0140" response="yes">
+<outConfig>
+<storageController id="SBMezz1" model="Cisco UCS C3000 RAID Controller for M4 Server Blade with 4G RAID Cache" pciSlot="SBMezz1" presence="equipped" raidSupport="yes" serial="FCH212274N8" type="SAS" vendor="LSI Logic" selfEncryptEnabled="no" adminAction="no-op" dn="sys/chassis-1/server-2/board/storage-SAS-SBMezz1" status="modified" ></storageController></outConfig>
+</configConfMo>
+
+[0;36mRemoving boot drive status from sys/chassis-1/server-2/board/storage-SAS-IOEMezz1[0m
+<configConfMo dn="sys/chassis-1/server-2/board/storage-SAS-IOEMezz1" cookie="1507719164/91a8d384-435b-1b43-800b-c33f007a0140" response="yes">
+<outConfig>
+<storageController id="IOEMezz1" model="Cisco UCS C3000 RAID Controller for M4 Server Blade with 4G RAID Cache" pciSlot="IOEMezz1" presence="equipped" raidSupport="yes" serial="FCH211075KJ" type="SAS" vendor="LSI Logic" selfEncryptEnabled="no" adminAction="no-op" dn="sys/chassis-1/server-2/board/storage-SAS-IOEMezz1" status="modified" ></storageController></outConfig>
+</configConfMo>
+
+[0;36mUnassigning all drives:[0m
+<configConfMo dn="sys/chassis-1/enc-1/zone-drive" cookie="1507719164/91a8d384-435b-1b43-800b-c33f007a0140" response="yes">
+<outConfig>
+<storageEnclosureDiskSlotZoneHelper dn="sys/chassis-1/enc-1/zone-drive" slotList="" operStatus="" ownership="" ownershipController="" adminState="triggered" status="modified" ></storageEnclosureDiskSlotZoneHelper></outConfig>
+</configConfMo>
+
+[0;36mAssigning drives 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28 to sys/chassis-1/server-2/SBMezz1:[0m
+<configConfMo dn="sys/chassis-1/enc-1/zone-drive" cookie="1507719164/91a8d384-435b-1b43-800b-c33f007a0140" response="yes">
+<outConfig>
+<storageEnclosureDiskSlotZoneHelper dn="sys/chassis-1/enc-1/zone-drive" slotList="" operStatus="" ownership="" ownershipController="" adminState="triggered" status="modified" ></storageEnclosureDiskSlotZoneHelper></outConfig>
+</configConfMo>
+
+[0;36mAssigning drives 29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56 to sys/chassis-1/server-2/IOEMezz1:[0m
+<configConfMo dn="sys/chassis-1/enc-1/zone-drive" cookie="1507719164/91a8d384-435b-1b43-800b-c33f007a0140" response="yes">
+<outConfig>
+<storageEnclosureDiskSlotZoneHelper dn="sys/chassis-1/enc-1/zone-drive" slotList="" operStatus="" ownership="" ownershipController="" adminState="triggered" status="modified" ></storageEnclosureDiskSlotZoneHelper></outConfig>
+</configConfMo>
+
+[0;33m NOTE: The following reset command may take a couple minutes to complete.[0m
+
+[0;36mResetting to defaults sys/chassis-1/server-2/adaptor-SIOC2:[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507719164/91a8d384-435b-1b43-800b-c33f007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374CN" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>
+
+[0;36mSetting sys/chassis-1/server-2/mgmt/if-1 network:[0m
+<configConfMo dn="sys/chassis-1/server-2/mgmt/if-1" cookie="1507719164/91a8d384-435b-1b43-800b-c33f007a0140" response="yes">
+<outConfig>
+<mgmtIf dn="sys/chassis-1/server-2/mgmt/if-1" description="CIMC Interface Network Settings" id="1" v4IPAddr="67.178.30.36" mac="70:DF:2F:33:2D:76" hostname="C3X60M4-FCH211871YM" v6extEnabled="no" v6IPAddr="::" v6prefix="64" v6extGw="::" v6linkLocal="::" v6SlaacIp="::" subject="blade" status="modified" ></mgmtIf></outConfig>
+</configConfMo>
+
+[0;36mSetting sys/chassis-1/slot-2/mgmt/if-1 network:[0m
+<configConfMo dn="sys/chassis-1/slot-2/mgmt/if-1" cookie="1507719164/91a8d384-435b-1b43-800b-c33f007a0140" response="yes">
+<outConfig>
+<mgmtIf dn="sys/chassis-1/slot-2/mgmt/if-1" description="Chassis Management Interface Network Settings" id="1" v4IPAddr="67.178.30.35" mac="40:01:7A:00:3F:C3" hostname="UCS-S3260-FCH212374CN-2" v6extEnabled="no" v6IPAddr="::" v6prefix="64" v6extGw="::" v6linkLocal="::" v6SlaacIp="::" subject="sioc" status="modified" ></mgmtIf></outConfig>
+</configConfMo>
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0':[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0" cookie="1507719164/91a8d384-435b-1b43-800b-c33f007a0140" response="yes">
+<outConfig>
+<adaptorHostEthIf name="eth0" cdn="VIC-2-eth0" ifType="virtual" mac="40:01:7A:00:3F:D2" mtu="8192" pxeBoot="disabled" iscsiBoot="disabled" usnicCount="0" uplinkPort="0" classOfService="0" channelNumber="N/A" portProfile="N/A" advancedFilter="disabled" dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0" status="modified" ></adaptorHostEthIf></outConfig>
+</configConfMo>
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1':[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1" cookie="1507719164/91a8d384-435b-1b43-800b-c33f007a0140" response="yes">
+<outConfig>
+<adaptorHostEthIf name="eth1" cdn="VIC-2-eth1" ifType="virtual" mac="40:01:7A:00:3F:D3" mtu="8192" pxeBoot="disabled" iscsiBoot="disabled" usnicCount="0" uplinkPort="1" classOfService="0" channelNumber="N/A" portProfile="N/A" advancedFilter="disabled" dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1" status="modified" ></adaptorHostEthIf></outConfig>
+</configConfMo>
+
+[0;36mSetting boot device order on 'sys/chassis-1/server-2':[0m
+<configConfMo dn="sys/chassis-1/server-2/boot-precision" cookie="1507719164/91a8d384-435b-1b43-800b-c33f007a0140" response="yes">
+<outConfig>
+<lsbootDevPrecision dn="sys/chassis-1/server-2/boot-precision" name="boot-precision" purpose="operational" rebootOnUpdate="no" reapply="no" configuredBootMode="None" lastConfiguredBootOrderSource="CIMC" status="modified" ></lsbootDevPrecision></outConfig>
+</configConfMo>
+
+[0;36mDisabling HyperThreading on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/Intel-HyperThreading-Tech" cookie="1507719164/91a8d384-435b-1b43-800b-c33f007a0140" response="yes">
+<outConfig>
+<biosVfIntelHyperThreadingTech dn="sys/chassis-1/server-2/bios/bios-settings/Intel-HyperThreading-Tech" vpIntelHyperThreadingTech="disabled" status="modified" ></biosVfIntelHyperThreadingTech></outConfig>
+</configConfMo>
+
+[0;36mDisabling Power Management on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/CPU-PowerManagement" cookie="1507719164/91a8d384-435b-1b43-800b-c33f007a0140" response="yes">
+<outConfig>
+<biosVfCPUPowerManagement dn="sys/chassis-1/server-2/bios/bios-settings/CPU-PowerManagement" vpCPUPowerManagement="disabled" status="modified" ></biosVfCPUPowerManagement></outConfig>
+</configConfMo>
+
+[0;36mDisabling Virtualization Technology on sys/chassis-1/server-2:[0m
+<configConfMo dn="sys/chassis-1/server-2/bios/bios-settings/Intel-Virtualization-Technology" cookie="1507719164/91a8d384-435b-1b43-800b-c33f007a0140" response="yes">
+<outConfig>
+<biosVfIntelVirtualizationTechnology dn="sys/chassis-1/server-2/bios/bios-settings/Intel-Virtualization-Technology" vpIntelVirtualizationTechnology="disabled" status="modified" ></biosVfIntelVirtualizationTechnology></outConfig>
+</configConfMo>
+
+[0;36mResetting to apply changes to sys/chassis-1/server-2/adaptor-SIOC2:[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2" cookie="1507719164/91a8d384-435b-1b43-800b-c33f007a0140" response="yes">
+<outConfig>
+<adaptorUnit id="SIOC2" model="UCSC-C3260-SIOC" pciSlot="SIOC2" presence="equipped" serial="FCH212374CN" adminState="policy" vendor="Cisco Systems Inc" dn="sys/chassis-1/server-2/adaptor-SIOC2" status="modified" ></adaptorUnit></outConfig>
+</configConfMo>

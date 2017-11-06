@@ -1,0 +1,29 @@
+2017/10/03:18:26:01 Starting preinstall script to cos3260-01
+2017/10/03:18:26:01 ./preinst_setup_UCSC-C3KIOE_2x10.sh -c 67.178.30.38 -u admin -p 'Comcast!23' -s 1.1.1.1 -b 1.1.1.1 -N
+
+[0;36mLogging into 67.178.30.38:[0m
+
+[0;33m  NOTE: The following reset command may take a couple minutes to complete.[0m
+
+[0;36mResetting to defaults sys/chassis-1/server-2/adaptor-SIOC2:[0m
+
+[0;36mSetting sys/chassis-1/server-2/mgmt/if-1 network:[0m
+
+[0;36mSetting sys/chassis-1/slot-2/mgmt/if-1 network:[0m
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0':[0m
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth1':[0m
+
+[0;36mSetting boot device order on 'sys/chassis-1/server-2':[0m
+
+[0;36mDisabling HyperThreading on sys/chassis-1/server-2:[0m
+
+[0;36mDisabling Power Management on sys/chassis-1/server-2:[0m
+
+[0;36mDisabling Virtualization Technology on sys/chassis-1/server-2:[0m
+
+[0;36mResetting to apply changes to sys/chassis-1/server-2/adaptor-SIOC2:[0m
+
+[0;36mLogging out of 67.178.30.38:[0m
+2017/10/03:18:28:15 ./preinst_setup_UCSC-C3KIOE_2x10.sh  script completed successfully for cos3260-01

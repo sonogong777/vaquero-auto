@@ -1,0 +1,18 @@
+2017/10/04:15:52:53 [1m[31mcde465-01:Configuration Entry found in inventory.yml, removing configuration[0m
+2017/10/04:15:52:53 Removing cde465-01 from inventory.yml
+2017/10/04:15:52:53 cde465-01:No duplicate entries found, continuing
+2017/10/04:15:52:53 cde465-01:adding entry onto the inventory file
+2017/10/04:15:52:53 [32mcde465-01:Configuration added to inventory successfully, continuing with ipmi[0m
+2017/10/04:15:52:53 cde465-01:iniating pre-vaquero step for ipmi
+2017/10/04:15:52:53 Starting ipmi configuration for cde465-01, log will be pre.cde465-01.log
+2017/10/04:15:52:53 Setting boot device to pxe
+2017/10/04:15:52:53 /usr/bin/ipmitool -I lanplus -H 67.178.5.142 -U ADMIN -P ADMIN chassis bootdev pxe
+Set Boot Device to pxe
+2017/10/04:15:52:53 PXE boot setting successful, Rebooting
+2017/10/04:15:52:53 System is on, shutting down
+2017/10/04:15:52:53  /usr/bin/ipmitool -I lanplus -H 67.178.5.142 -U ADMIN -P ADMIN chassis power off
+Chassis Power Control: Down/Off
+2017/10/04:15:53:01 System Power off confirmed, Powering on the system
+2017/10/04:15:53:01 System is off, powering on
+Chassis Power Control: Up/On
+2017/10/04:15:53:09 System Power on confirmed,IPMI system reboot successful

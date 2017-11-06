@@ -1,0 +1,9 @@
+2017/10/04:15:52:53 cde465-04:No duplicate entries found, continuing
+2017/10/04:15:52:53 cde465-04:adding entry onto the inventory file
+2017/10/04:15:52:53 [32mcde465-04:Configuration added to inventory successfully, continuing with ipmi[0m
+2017/10/04:15:52:53 cde465-04:iniating pre-vaquero step for ipmi
+2017/10/04:15:52:53 Starting ipmi configuration for cde465-04, log will be pre.cde465-04.log
+2017/10/04:15:52:53 Setting boot device to pxe
+2017/10/04:15:52:53 /usr/bin/ipmitool -I lanplus -H 1.1.1.1 -U ADMIN -P ADMIN chassis bootdev pxe
+Error: Unable to establish IPMI v2 / RMCP+ session
+2017/10/04:15:53:13 cde465-04, Error detected check pre.cde465-04.log

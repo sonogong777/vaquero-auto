@@ -1,0 +1,4 @@
+2017/10/11:10:55:11 Starting preinstall script to cos3260-05
+2017/10/11:10:55:11 ./preinst_setup_UCSC-C3KIOE_2x10.sh -c 67.178.30.35 -u admin -p 'Comcast!23' -s 67.178.30.39 -b 67.178.30.36 -N
+
+[0;36mLogging into 67.178.30.35:[0m

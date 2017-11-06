@@ -1,0 +1,37 @@
+name: cde465-11
+interfaces:
+  - type: physical
+    subnet: 3260-subnet
+    mac: 0c:c4:7a:bb:0d:2a
+    ipv4: 67.178.3.9
+metadata:
+    HostName: cde465-01
+    Mgmt_IP: 67.178.3.9
+    Data_eth4_IP: 67.178.10.124
+    Data_eth5_IP: 67.178.10.125
+workflow: cos465-wf
+---
+name: cos2260-05
+interfaces:
+  - type: physical
+    subnet: 3260-subnet
+    mac: 90:e2:ba:e6:96:78
+    ipv4: 67.178.3.5
+metadata:
+    HostName: cos3260-01
+    Mgmt_IP: 67.178.3.5
+    Data_eth2_IP: 67.178.10.116
+    Data_eth3_IP: 67.178.10.117
+workflow: cos3260-wf
+---
+name: cmx-01
+interfaces:
+  - type: physical
+    subnet: vlan-342
+    mac: 6c:41:6a:b1:56:fb
+    ipv4: 67.178.14.6
+metadata:
+    HostName: cmc-01
+    MgmtIP: 67.178.14.6
+workflow: cmc-wf
+---

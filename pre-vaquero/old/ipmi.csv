@@ -1,0 +1,13 @@
+host,ipmi,cimc,sioc,bmc,user,password
+cde465-02,1.1.1.1,,,,ADMIN,ADMIN
+cos3260-01,,67.178.30.38,,,admin,Comcast!23
+cde465-01,67.178.5.142,,,,ADMIN,ADMIN
+cos3260-02,,67.178.30.138,67.178.30.35,67.178.30.36,admin,Comcast!23
+cde465-03,1.1.1.1,,,,ADMIN,ADMIN
+cos3260-03,,67.178.30.38,,67.178.30.36,admin,Comcast!23
+cde465-04,67.178.5.142,,,,ADMIN,ADMIN
+cos3260-04,,67.178.30.138,67.178.30.35,,admin,Comcast!23
+cde465-05,1.1.1.1,,,,ADMIN,ADMIN
+cos3260-05,,67.178.30.38,67.178.30.35,67.178.30.36,admin,Comcast!23
+cde465-06,67.178.5.142,,,,ADMIN,ADMIN
+cos3260-06,,67.178.30.138,67.178.30.35,67.178.30.36,admin,Comcast!23

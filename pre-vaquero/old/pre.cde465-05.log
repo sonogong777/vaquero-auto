@@ -1,0 +1,5 @@
+2017/10/03:18:26:01 Starting ipmi configuration for cde465-05, log will be pre.cde465-05.log
+2017/10/03:18:26:01 Setting boot device to pxe
+2017/10/03:18:26:01 /usr/bin/ipmitool -I lanplus -H 1.1.1.1 -U ADMIN -P ADMIN chassis bootdev pxe
+Error: Unable to establish IPMI v2 / RMCP+ session
+2017/10/03:18:26:21 cde465-05, Error detected check pre.cde465-05.log

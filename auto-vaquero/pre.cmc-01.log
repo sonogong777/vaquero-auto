@@ -1,0 +1,5 @@
+2017/10/04:15:52:53 [1m[31mcmc-01:Configuration Entry found in inventory.yml, removing configuration [0m
+2017/10/04:15:52:53 Removing cmc-01 from inventory.yml
+2017/10/04:15:52:53 cmc-01:No duplicate entries found, continuing
+2017/10/04:15:52:53 cmc-01:adding entry onto the inventory file
+2017/10/04:15:52:53 [32mcmc-01:Configuration added to inventory successfully, NEXT STEP ? [0m

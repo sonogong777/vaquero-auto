@@ -1,0 +1,10 @@
+2017/10/04:15:56:47 Validating full.problem.csv field counts
+2017/10/04:15:56:47 [1m[34mQuick test on full.problem.csv logical fields[0m
+2017/10/04:15:56:47 [1m[31mERROR: Line 2 in full.problem.csv cde465-02 missing required field detected for cos465[0m
+2017/10/04:15:56:47 [1m[31mERROR: Line 6 in full.problem.csv cde465-03 missing required field detected for cos465[0m
+2017/10/04:15:56:47 [1m[31mERROR: Line 10 in full.problem.csv cde465-05 missing required field detected for cos465[0m
+2017/10/04:15:56:47 [1m[31mERROR: Line 11 in full.problem.csv cos3260-05 missing required field detected for cos3260[0m
+2017/10/04:15:56:47 [1m[31mERROR: Line 12 in full.problem.csv cde465-06 missing required field detected for cos465[0m
+2017/10/04:15:56:47 [1m[31mERROR: Line 13 in full.problem.csv cos3260-06 missing required field detected for cos3260[0m
+2017/10/04:15:56:47 Problems detected in full.problem.csv, please correct the file and restart the script.
+2017/10/04:15:56:47 Check pre.csv.log for additional detail

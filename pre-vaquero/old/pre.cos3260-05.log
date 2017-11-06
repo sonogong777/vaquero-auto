@@ -1,0 +1,24 @@
+2017/10/03:18:26:01 Starting preinstall script to cos3260-05
+2017/10/03:18:26:01 ./preinst_setup_UCSC-C3KIOE_2x10.sh -c 67.178.30.38 -u admin -p 'Comcast!23' -s 67.178.30.35 -b 67.178.30.36 -N
+
+[0;36mLogging into 67.178.30.38:[0m
+
+[0;33m  NOTE: The following reset command may take a couple minutes to complete.[0m
+
+[0;36mResetting to defaults sys/chassis-1/server-2/adaptor-SIOC2:[0m
+
+[0;36mSetting sys/chassis-1/server-2/mgmt/if-1 network:[0m
+
+[0;36mSetting sys/chassis-1/slot-2/mgmt/if-1 network:[0m
+
+[0;36mConfiguring element 'sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0':[0m
+<configConfMo dn="sys/chassis-1/server-2/adaptor-SIOC2/host-eth-eth0" cookie="1507045602/b850409c-a65a-1aa6-8006-3a3d007a0140" response="yes" errorCode="2003" invocationResult="unidentified-fail" errorDescr="Operation failed. : Adapter SIOC2 is not powered on.Check Host power state and try again."></configConfMo>
+
+[1;97;41m          [0m
+[1;97;41m  ERROR:  [0m  [1;97;41m[0m
+[1;97;41m          [0m
+
+
+[0;36mExiting ...[0m
+2017/10/03:18:27:28 Monitoring status of the preinstall script for cos3260-05
+2017/10/03:18:27:28 Error detected, please review the pre.cos3260-05.log for details

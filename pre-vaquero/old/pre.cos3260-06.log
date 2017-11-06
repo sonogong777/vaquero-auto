@@ -1,0 +1,11 @@
+2017/10/03:18:26:01 Starting preinstall script to cos3260-06
+2017/10/03:18:26:01 ./preinst_setup_UCSC-C3KIOE_2x10.sh -c 67.178.30.138 -u admin -p 'Comcast!23' -s 67.178.30.35 -b 67.178.30.36 -N
+
+[0;36mLogging into 67.178.30.138:[0m
+
+[1;97;41m          [0m
+[1;97;41m  ERROR:  [0m  [1;97;41mFailed to establish CIMC session!  Please check IP address, username, and password.[0m
+[1;97;41m          [0m
+
+2017/10/03:18:26:13 Monitoring status of the preinstall script for cos3260-06
+2017/10/03:18:26:13 Error detected, please review the pre.cos3260-06.log for details

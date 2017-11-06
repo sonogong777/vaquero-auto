@@ -1,0 +1,27 @@
+2017/10/10:10:19:04 Starting ipmi configuration for cde465-01, log will be pre.cde465-01.log
+2017/10/10:10:19:04 Setting boot device to pxe
+2017/10/10:10:19:04 /usr/bin/ipmitool -I lanplus -H 67.178.5.142 -U ADMIN -P ADMIN chassis bootdev pxe
+Set Boot Device to pxe
+2017/10/10:10:19:04 PXE boot setting successful, Rebooting
+2017/10/10:10:19:04 System is on, shutting down
+2017/10/10:10:19:04  /usr/bin/ipmitool -I lanplus -H 67.178.5.142 -U ADMIN -P ADMIN chassis power off
+Chassis Power Control: Down/Off
+2017/10/10:10:19:12 System Power off confirmed, Powering on the system
+2017/10/10:10:19:12 System is off, powering on
+Chassis Power Control: Up/On
+2017/10/10:10:19:20 System Power on confirmed,IPMI system reboot successful
+2017/10/10:10:24:14 Starting ipmi configuration for cde465-01, log will be pre.cde465-01.log
+2017/10/10:10:24:14 Setting boot device to pxe
+2017/10/10:10:24:14 /usr/bin/ipmitool -I lanplus -H 67.178.5.142 -U ADMIN -P ADMIN chassis bootdev pxe
+Set Boot Device to pxe
+2017/10/10:10:24:14 PXE boot setting successful, Rebooting
+2017/10/10:10:24:14 System is on, shutting down
+2017/10/10:10:24:14  /usr/bin/ipmitool -I lanplus -H 67.178.5.142 -U ADMIN -P ADMIN chassis power off
+Chassis Power Control: Down/Off
+2017/10/10:10:24:22 System is on, shutting down
+2017/10/10:10:24:22  /usr/bin/ipmitool -I lanplus -H 67.178.5.142 -U ADMIN -P ADMIN chassis power off
+Chassis Power Control: Down/Off
+2017/10/10:10:24:30 System Power off confirmed, Powering on the system
+2017/10/10:10:24:30 System is off, powering on
+Chassis Power Control: Up/On
+2017/10/10:10:24:38 System Power on confirmed,IPMI system reboot successful

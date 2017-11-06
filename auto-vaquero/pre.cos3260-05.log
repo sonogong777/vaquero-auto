@@ -1,0 +1,20 @@
+2017/10/04:15:52:53 Starting preinstall script to cos3260-05
+2017/10/04:15:52:53 ./preinst_setup_UCSC-C3KIOE_2x10.sh -c 67.178.30.35 -u admin -p 'Comcast!23' -s 67.178.30.36 -b 1.1.1.1 -N
+
+[0;36mLogging into 67.178.30.35:[0m
+
+[0;33m  NOTE: The following reset command may take a couple minutes to complete.[0m
+
+[0;36mResetting to defaults sys/chassis-1/server-2/adaptor-SIOC2:[0m
+
+[0;36mSetting sys/chassis-1/server-2/mgmt/if-1 network:[0m
+<configConfMo cookie="1507122811/4f427f82-b85a-1ab8-800a-c33f007a0140" response="yes" errorCode="552" invocationResult="service-unavailable" errorDescr="Authorization required"> </configConfMo>
+
+[1;97;41m          [0m
+[1;97;41m  ERROR:  [0m  [1;97;41m[0m
+[1;97;41m          [0m
+
+
+[0;36mExiting ...[0m
+2017/10/04:15:53:53 Monitoring status of the preinstall script for cos3260-05
+2017/10/04:15:53:53 Error detected, please review the pre.cos3260-05.log for details

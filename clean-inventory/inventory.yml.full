@@ -1,0 +1,167 @@
+name: cde465-01
+interfaces:
+  - type: physical
+    subnet: 3260-subnet
+    mac: 0c:c4:7a:bb:0d:2a
+    ipv4: 67.178.3.9
+metadata:
+    HostName: cde465-01
+    Mgmt_IP: 67.178.3.9
+    Data_eth4_IP: 67.178.10.124
+    Data_eth5_IP: 67.178.10.125
+workflow: cos465-wf
+---
+name: cos3260-05
+interfaces:
+  - type: physical
+    subnet: 3260-subnet
+    mac: 0c:c4:7a:bb:0d:2a
+    ipv4: 67.178.30.38
+metadata:
+    HostName: cos3260-05
+    Mgmt_IP: 67.178.30.38
+    Data_eth2_IP: 1.1.1.1
+    Data_eth3_IP: 2.2.2.2
+workflow: cos3260-wf
+---
+name: cos3260-01
+interfaces:
+  - type: physical
+    subnet: 3260-subnet
+    mac: 90:e2:ba:e6:96:78
+    ipv4: 67.178.3.5
+metadata:
+    HostName: cos3260-01
+    Mgmt_IP: 67.178.3.5
+    Data_eth2_IP: 67.178.10.116
+    Data_eth3_IP: 67.178.10.117
+workflow: cos3260-wf
+---
+name: cde465-06
+interfaces:
+  - type: physical
+    subnet: 3260-subnet
+    mac: 0c:c4:7a:bb:0d:2a
+    ipv4: 1.1.1.1
+metadata:
+    HostName: cde465-06
+    Mgmt_IP: 1.1.1.1
+    Data_eth4_IP: 1.1.1.1
+    Data_eth5_IP: 2.2.2.2
+workflow: cos465-wf
+---
+name: cos3260-02
+interfaces:
+  - type: physical
+    subnet: 3260-subnet
+    mac: 90:e2:ba:e6:96:d8
+    ipv4: 67.178.3.6
+metadata:
+    HostName: cos3260-02
+    Mgmt_IP: 67.178.3.6
+    Data_eth2_IP: 67.178.10.118
+    Data_eth3_IP: 3.3.3.3
+workflow: cos3260-wf
+---
+name: cde465-04
+interfaces:
+  - type: physical
+    subnet: 3260-subnet
+    mac: 0c:c4:7a:bb:0d:2a
+    ipv4: 67.178.5.142
+metadata:
+    HostName: cde465-04
+    Mgmt_IP: 67.178.5.142
+    Data_eth4_IP: 2.2.2.2
+    Data_eth5_IP: 3.3.3.3
+workflow: cos465-wf
+---
+name: cde465-05
+interfaces:
+  - type: physical
+    subnet: 3260-subnet
+    mac: 0c:c4:7a:bb:0d:2a
+    ipv4: 1.1.1.1
+metadata:
+    HostName: cde465-05
+    Mgmt_IP: 1.1.1.1
+    Data_eth4_IP: 2.2.2.2
+    Data_eth5_IP: 3.3.3.3
+workflow: cos465-wf
+---
+name: cde465-02
+interfaces:
+  - type: physical
+    subnet: 3260-subnet
+    mac: 0c:c4:7a:bb:0d:2a
+    ipv4: 1.1.1.1
+metadata:
+    HostName: cde465-02
+    Mgmt_IP: 1.1.1.1
+    Data_eth4_IP: 2.2.2.2
+    Data_eth5_IP: 3.3.3.3
+workflow: cos465-wf
+---
+name: cos3260-03
+interfaces:
+  - type: physical
+    subnet: 3260-subnet
+    mac: 90:e2:ba:e6:97:14
+    ipv4: 67.178.3.7
+metadata:
+    HostName: cos3260-03
+    Mgmt_IP: 67.178.3.7
+    Data_eth2_IP: 67.178.10.120
+    Data_eth3_IP: 67.178.10.121
+workflow: cos3260-wf
+---
+name: cde465-03
+interfaces:
+  - type: physical
+    subnet: 3260-subnet
+    mac: 0c:c4:7a:bb:0d:2a
+    ipv4: 1.1.1.1
+metadata:
+    HostName: cde465-03
+    Mgmt_IP: 1.1.1.1
+    Data_eth4_IP: 2.2.2.2
+    Data_eth5_IP: 1.1.1.1
+workflow: cos465-wf
+---
+name: cos3260-04
+interfaces:
+  - type: physical
+    subnet: 3260-subnet
+    mac: 90:e2:ba:e6:96:e4
+    ipv4: 67.178.3.8
+metadata:
+    HostName: cos3260-04
+    Mgmt_IP: 67.178.3.8
+    Data_eth2_IP: 67.178.10.122
+    Data_eth3_IP: 67.178.10.10
+workflow: cos3260-wf
+---
+name: cos3260-06
+interfaces:
+  - type: physical
+    subnet: 3260-subnet
+    mac: 0c:c4:7a:bb:0d:2a
+    ipv4: 67.178.30.138
+metadata:
+    HostName: cos3260-06
+    Mgmt_IP: 67.178.30.138
+    Data_eth2_IP: 2.2.2.2
+    Data_eth3_IP: 1.1.1.1
+workflow: cos3260-wf
+---
+name: cmc-01
+interfaces:
+  - type: physical
+    subnet: vlan-342
+    mac: 6c:41:6a:b1:56:fb
+    ipv4: 67.178.14.6
+metadata:
+    HostName: cmc-01
+    MgmtIP: 67.178.14.6
+workflow: cmc-wf
+---
