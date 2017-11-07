@@ -20,7 +20,7 @@ Currently implemented steps..
   output file: inventory.yml in CWD
 ````
 
-<a href="https://wwwin-github.cisco.com/kerhee/vaquero-auto/blob/master/clean-inventory/inventory.yml"> To view updated inventory.yml, click here </a>
+<a href="https://github.com/sonogong777/vaquero-auto/blob/master/clean-inventory/inventory.yml"> To view updated inventory.yml, click here </a>
 
 
 

@@ -20,7 +20,7 @@ Pending items:
   example: ./auto-vaquero.sh test.csv
 ```
 
-<a href="https://wwwin-github.cisco.com/kerhee/vaquero-auto/blob/master/auto-vaquero/inventory.yml"> Updated inventory.yaml </a>
+<a href="https://github.com/sonogong777/vaquero-auto/blob/master/auto-vaquero/inventory.yml"> Updated inventory.yaml </a>
 
 
 
