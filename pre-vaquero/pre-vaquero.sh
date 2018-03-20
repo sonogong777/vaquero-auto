@@ -13,7 +13,7 @@
 # 7.0 updates to pre-vaquero.sh to incorporate the new csv file format and to perform execution.
 # 8.0 Defects for ipmi and cimc pxe boot.
 # 8.1 Defects for duplicate check to be more precise.
-#
+# 8.2 Removing requirement for vaq-subnet and vaq-workflow
 #######################################################################
 csvfile=$1
 preinstall="./preinst_setup_UCSC-C3KIOE_2x10.sh"
@@ -156,14 +156,14 @@ validate_csv() {
         detect=$((detect+1))
       #cos465
       elif [ ! -z "$ipmi" ];then
-           if  [ -z "$user" ] || [ -z "$password" ] || [ -z "$mac" ] || [ -z "$mgmt_ip" ] || [ -z "$int1" ] || [ -z "$int2" ] || [ -z "$subnet" ] || [ -z "$workflow" ];then
+           if  [ -z "$user" ] || [ -z "$password" ] || [ -z "$mac" ] || [ -z "$mgmt_ip" ] || [ -z "$int1" ] || [ -z "$int2" ];then
                echo "${red}Line $line in $csvfile $host missing required field detected for cos465${normal}"
                echo_log csv "${red}ERROR: Line $line in $csvfile $host missing required field detected for cos465${normal}"
                detect=$((detect+1))
            fi
        #cos3260
        elif [ ! -z "$cimc" ];then
-            if  [ -z "$user" ] || [ -z "$password" ] || [ -z "$mac" ] || [ -z "$mgmt_ip" ] || [ -z "$int1" ] || [ -z "$int2" ] || [ -z "$sioc" ] || [ -z "$bmc" ] || [ -z "$subnet" ] || [ -z "$workflow" ];then
+            if  [ -z "$user" ] || [ -z "$password" ] || [ -z "$mac" ] || [ -z "$mgmt_ip" ] || [ -z "$int1" ] || [ -z "$int2" ] || [ -z "$sioc" ] || [ -z "$bmc" ];then
                 echo "${red}Line $line in $csvfile $host missing required field detected for cos3260${normal}"
                 echo_log csv "${red}ERROR: Line $line in $csvfile $host missing required field detected for cos3260${normal}"
                 detect=$((detect+1))
