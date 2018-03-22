@@ -1,0 +1,4 @@
+host, mac, mgmt_ip, user, password, ipmi, int1, int2, cimc, sioc, bmc, subnet, workflow
+cos3260-02,,,admin,Comcast!23,,,,67.178.30.38,67.178.30.35,67.178.30.36,,
+cos3260-01,90:e2:ba:e6:96:78,67.178.3.5,admin,Comcast!23,,,67.178.10.117,67.178.30.37,67.178.30.33,67.178.30.36,,
+cos3260-91,,67.178.3.5,admin,Comcast!23,,,,67.178.30.223,67.178.30.33,67.178.30.36,,
