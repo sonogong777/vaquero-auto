@@ -1,7 +1,8 @@
 # vim: ts=4 sw=4
 #!/bin/bash
 
-LOG=/dev/null
+#LOG=/dev/null
+LOG=preinstall.out
 CURL="curl -s -k -d"
 new_class_of_service=-1
 controller_list=( "SBMezz1" "IOEMezz1" )
@@ -9,12 +10,11 @@ drive_list=( "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,
 			 "29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56" )
 
 help () {
-	echo -e "Preinstallation setup for the CDE6032 with IOE (v1.4)"
+	echo -e "Preinstallation setup for the CDE6032 with IOE (v1.2)"
 	echo -e "   options:"
 	echo -e "      -b <ip>        BMC IP address"
 	echo -e "      -c <ip>        CIMC IP address"
 	echo -e "      -D             Destructive; reset storage system - all data may be removed" 
-	echo -e "      -G             Generic; does not require or apply site-specific values"
 	echo -e "      -N             Nondestructive; will not modify existing storage configuration" 
 	echo -e "      -p <pw>        CIMC password"
 	echo -e "      -s <ip>        SIOC IP address"
@@ -72,14 +72,13 @@ logout_exit() {
 	exit 1
 }
 
-while getopts "b:c:DGhp:s:tu:N" opt
+while getopts "b:c:Dhp:s:tu:N" opt
 do
 	case "$opt" in
 		b) _bmc_ip=$OPTARG ;;
 		c) cimc_ip=$OPTARG ;;
 		D) destructive="yes" ;;
 		h) help ;;
-		G) generic="yes" ;;
 		p) pw=$OPTARG ;;
 		s) _sioc_ip=$OPTARG ;;
 		t) X=echo; test=1; LOG=preinst_setup.log; rm -f $LOG;;
@@ -92,6 +91,14 @@ if [ "$cimc_ip" == "" ]; then
 	read -p "     CIMC IP: " cimc_ip
 fi
 
+if [ "$_sioc_ip" == "" ]; then 
+	read -p "     SIOC IP: " _sioc_ip
+fi
+
+if [ "$_bmc_ip" == "" ]; then 
+	read -p "      BMC IP: " _bmc_ip
+fi
+
 if [ "$user" == "" ]; then
 	read -p "    Username: " user
 fi
@@ -101,21 +108,14 @@ if [ "$pw" == "" ]; then
 	echo ""
 fi
 
-if [ "$generic" != "yes" ]; then
-	if [ "$_bmc_ip" == "" ]; then 
-		read -p "      BMC IP: " _bmc_ip
-	fi
-
-	if [ "$_sioc_ip" == "" ]; then 
-		read -p "     SIOC IP: " _sioc_ip
-	fi
-
-	bmc_ip=$_bmc_ip
-	sioc_ip=$_sioc_ip
-fi
+bmc_ip=$_bmc_ip
+sioc_ip=$_sioc_ip
 
 echo -e "\n\e[0;36mLogging into $cimc_ip:\e[0m"
 cimc_session=`$CURL "<aaaLogin inName='$user' inPassword='$pw'></aaaLogin>" https://$cimc_ip/nuova | sed "s/.*outCookie=\"\([0-9a-f\/\-]*\).*/\1/"`
+
+#echo $cimc_session
+#exit 0
 
 if [ "$cimc_session" != "" ] && ! grep -q "[g-zG-Z]" <<< "$cimc_session"; then
 	server_node=(`$CURL "<configResolveClass cookie='$cimc_session' classId='computeServerNode' inHierarchical='false'></configResolveClass>" \
@@ -296,19 +296,17 @@ if [ "$cimc_session" != "" ] && ! grep -q "[g-zG-Z]" <<< "$cimc_session"; then
 						   	<lsbootUsb name='usbcd' type='USB' subtype='usb-cd' order='1' state='Enabled' rn='usb-usbcd'/> \
 						   	<lsbootVMedia name='vMedia' type='VMEDIA' subtype='cimc-mapped-dvd' order='2' state='Enabled' rn='vm-vMedia'/> \
 						   	<lsbootHdd name='system' type='LOCALHDD' slot='SBMezz1' order='3' state='Enabled' rn='hdd-system'/> \
-							<lsbootPxe name='network1' type='PXE' slot='IOESlot1' port='0' order='4' state='Enabled' rn='pxe-network1'/> \
-							<lsbootPxe name='network2' type='PXE' slot='IOESlot1' port='1' order='5' state='Enabled' rn='pxe-network2'/> \
-							<lsbootUefiShell name='uefi' type='UEFISHELL' order='6' state='Disabled' rn='uefishell-uefi'/> \
+							<lsbootPxe name='network1' type='PXE' slot='SIOC$server_node' port='0' order='4' state='Enabled' rn='pxe-network1'/> \
+							<lsbootPxe name='network2' type='PXE' slot='SIOC$server_node' port='1' order='5' state='Enabled' rn='pxe-network2'/> \
 					 </lsbootDevPrecision>"
 	else
 		xmlapicfg_chk "Setting PCH boot device order on 'sys/chassis-1/server-$server_node':" \
 					  "sys/chassis-1/server-$server_node/boot-precision" \
 					  "<lsbootDevPrecision \
 							dn='sys/chassis-1/server-$server_node/boot-precision' rebootOnUpdate='no' reapply='yes'> \
-						   	<lsbootPchStorage name='system0' type='PCHSTORAGE' lun='1' order='1' state='Enabled' rn='pchstorage-system0'/> \
-							<lsbootPchStorage name='system1' type='PCHSTORAGE' lun='2' order='2' state='Enabled' rn='pchstorage-system1'/> \
+						   	<lsbootPchStorage name='system0' type='PCHSTORAGE' lun='0' order='1' state='Enabled' rn='pchstorage-system0'/> \
+							<lsbootPchStorage name='system1' type='PCHSTORAGE' lun='1' order='2' state='Enabled' rn='pchstorage-system1'/> \
 							<lsbootPxe name='pxe' type='PXE' slot='$server_node' port='1' order='3' state='Enabled' rn='pxe-pxe'/> \
-							<lsbootUefiShell name='uefi' type='UEFISHELL' order='4' state='Disabled' rn='uefishell-uefi'/> \
 					 </lsbootDevPrecision>"
 	fi
 
